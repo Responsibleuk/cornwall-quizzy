@@ -437,3 +437,152 @@ input::placeholder {
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
 }
+
+
+/*
+=============== 
+Countdown Timer
+===============
+*/
+.gift-img {
+    margin-bottom: 2rem;
+  }
+  .gift-info h3 {
+    text-transform: uppercase;
+    color: var(--clr-primary-3);
+  }
+  .gift-info p {
+    color: var(--clr-grey-6);
+  }
+  .date {
+    color: var(--clr-grey-5);
+    font-size: 0.85rem;
+  }
+  @media screen and (min-width: 992px) {
+    .section-center {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+      gap: 3rem;
+      width: 95vw;
+    }
+    .gift-img {
+      margin-bottom: 0;
+    }
+  }
+  .gift-info p {
+    margin: 2rem 0;
+  }
+  .deadline {
+    display: flex;
+  }
+  .deadline-format {
+    background: var(--clr-grey-1);
+    color: var(--clr-white);
+    margin-right: 1rem;
+    width: 5rem;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+  .deadline-format span {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+  }
+  .deadline h4:not(.expired) {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+    letter-spacing: var(--spacing);
+  }
+  
+
+  /*
+=============== 
+Footer
+===============
+*/
+
+#footer-container {
+    background-color:#0C3C60;
+    margin-top: 10px;
+    margin-bottom: -50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    position: sticky;
+    }
+    
+    .emailSignup {
+      display: block;
+      background: #0C3C60;
+      width: 100%;
+      margin: 0 0 20px;
+      position: relative;
+      box-sizing: border-box;
+      padding: 40px;
+      text-align: center;
+    }
+    
+    .emailSignup h2 {
+      font-size: 32px;
+      margin: 0 0 10px;
+      color: #FFFFFF;
+    }
+    
+    .emailSignup p {
+      font-size: 20px;
+      line-height: 1.4;
+      margin: 0 0 20px;
+      color: #D3D3D3;
+    }
+    
+    .emailSignup form {
+      text-align: center;
+    }
+    
+    .emailSignup--email-input {
+      vertical-align: middle;
+      border: 0;
+      outline: 0;
+      width: 50%;
+      height: 46px;
+      line-height: 46px;
+      padding: 5px 20px;
+      box-sizing: border-box;
+      font-size: 18px;
+      border-radius: 3px;
+    }
+    
+    .emailSignup--email-submit {
+      vertical-align: middle;
+      border: 0;
+      width: 18%;
+      height: 46px;
+      line-height: 46px;
+      font-size: 22px;
+      font-weight: bold;
+      background: #85C5D4;
+      color: #FFFFFF;
+      border-radius: 3px;
+      text-transform: uppercase;
+      text-shadow: 0 0 1px #85C5D4;
+    }
+    
+    .closeBox {
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #fff;
+      line-height: 30px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 9999px;
+      cursor: pointer;
+    }
+    
