@@ -46,7 +46,7 @@ Variables
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
   --clr-gold: #c59d5f;
-  --ff-primary: "Roboto", sans-serif;
+  --ff-primary: "Merriweather", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
@@ -70,7 +70,7 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-secondary);  
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -111,7 +111,6 @@ h4 {
   font-size: 0.875rem;
 }
 p {
-  margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
@@ -138,7 +137,11 @@ p {
   }
 }
 
-/* nav bar */
+/*
+=============== 
+Nav Bar
+===============
+*/
 
 nav {
     background: var(--clr-white);
@@ -232,9 +235,25 @@ nav {
       transition: var(--transition);
     }
     .social-icons a:hover {
-      color: var(--clr-primary-7);
+      color: var(--clr-primary-7);  
     }
   }
+
+/*
+=============== 
+Countdown Styles
+===============
+*/
+
+
+
+
+
+/*
+=============== 
+Quiz Styles
+===============
+*/
 
 .container {
     width: 100vw;
@@ -276,7 +295,7 @@ nav {
     margin-bottom: 1rem;
     text-decoration: none;
     color: rgb(28, 26, 26);
-    background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%);
+    background: var(--clr-primary-2);
     border-radius: 4px;
 }
 
@@ -357,13 +376,20 @@ body {
   color: #fff;
 }
 
+#question {
+  color: var(--clr-primary-1);
+  font-size: 2rem;
+}
+
 .choice-container {
   display: flex;
   margin-bottom: 0.8rem;
   width: 100%;
+  height: 4.5rem;
   border-radius: 4px;
-  background: rgb(18, 93, 255);
-  font-size: 3rem;
+  background: var(--clr-primary-2);
+  font-size: 2rem;
+  color: white;
   min-width: 80rem;
 }
 
@@ -375,21 +401,21 @@ body {
 }
 
 .choice-prefix {
-  padding: 2rem 2.5rem;
+  padding: 1.25rem 2.5rem;
   color: white;
 }
 
 .choice-text {
-  padding: 2rem;
+  padding: 1.25rem;
   width: 100%;
 }
 
 .correct {
-  background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%);
+  background: var(--clr-green-dark);
 }
 
 .incorrect {
-  background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1) 100%);
+  background: var(--clr-red-dark);
 }
 
 /* Heads up Display */
