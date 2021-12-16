@@ -235,15 +235,18 @@ nav {
       color: var(--clr-primary-7);
     }
   }
+  
+/* quiz */
 
 .container {
-    width: 100vw;
+    width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
+    overflow: hidden;
 }
 
 .flex-column {
@@ -268,7 +271,7 @@ nav {
     display: none;
 }
 
-.quiz-btn {
+.btn {
     font-size: 2.4rem;
     padding: 2rem 0;
     width: 30rem;
@@ -276,18 +279,18 @@ nav {
     margin-bottom: 1rem;
     text-decoration: none;
     color: rgb(28, 26, 26);
-    background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%);
+    background: #0C3C60;;
     border-radius: 4px;
 }
 
-.quiz-btn:hover {
+.btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
+    box-shadow: #0C3C60;
     transition: transform 150ms;
     transform: scale(1.03);
 }
 
-.quiz-btn[disabled]:hover {
+.btn[disabled]:hover {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
@@ -350,38 +353,39 @@ input::placeholder {
     color: rgb(28, 26, 26)
 }
 
-/*  */
+/* game */
 
-
-body {
-  color: #fff;
+/* #question {
+ font-size: 150%;
 }
 
 .choice-container {
   display: flex;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   width: 100%;
   border-radius: 4px;
-  background: rgb(18, 93, 255);
-  font-size: 3rem;
-  min-width: 80rem;
+  background: rgb(12, 60, 96);
+  font-size: 1.5rem;
+  height: 4rem;
+  min-width: 60rem;
 }
 
 .choice-container:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(12, 60, 96, 0.5);
   transform: scale(1.02);
   transform: transform 100ms;
 }
 
 .choice-prefix {
-  padding: 2rem 2.5rem;
+  padding: 1rem 2.5rem;
   color: white;
 }
 
 .choice-text {
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
+  color: whitesmoke;
 }
 
 .correct {
@@ -390,6 +394,41 @@ body {
 
 .incorrect {
   background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1) 100%);
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: rgb(18, 93, 255);
+    font-size: 3rem;
+    min-width: 80rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color: white;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+.correct {
+    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%);
+}
+
+.incorrect {
+    background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1) 100%);
 }
 
 /* Heads up Display */
@@ -408,7 +447,7 @@ body {
 }
 
 #progressBar {
-  width: 80rem;
+  width: 20rem;
   height: 3rem;
   border: 0.2rem solid rgb(11,223,36);
   margin-top: 2rem;
@@ -428,4 +467,126 @@ body {
   }
 }
 
-/*  */
+/* Heads up Display */
+#progress {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.progress-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  
+  width: 55rem;
+  height: 3rem;
+  border: 0.2rem solid green;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  overflow: hidden;
+}
+
+#progressBarFull {
+  height: 100%;
+  background: green;
+  width: 0%;
+}
+
+@media screen and (max-width: 768px) {
+  .choice-container {
+      min-width: 40rem;
+  }
+} */
+
+
+
+
+
+/* footer */
+
+/* #footer-container {
+  background-color:#0C3C60;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  }
+  
+  .emailSignup {
+    display: block;
+    background: #0C3C60;
+    width: 100%;
+    margin: 0 0 20px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .emailSignup h2 {
+    font-size: 32px;
+    margin: 0 0 10px;
+    color: #FFFFFF;
+  }
+  
+  .emailSignup p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 20px;
+    color: #D3D3D3;
+  }
+  
+  .emailSignup form {
+    text-align: center;
+  }
+  
+  .emailSignup--email-input {
+    vertical-align: middle;
+    border: 0;
+    outline: 0;
+    width: 50%;
+    height: 46px;
+    line-height: 46px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border-radius: 3px;
+  }
+  
+  .emailSignup--email-submit {
+    vertical-align: middle;
+    border: 0;
+    width: 18%;
+    height: 46px;
+    line-height: 46px;
+    font-size: 22px;
+    font-weight: bold;
+    background: #85C5D4;
+    color: #FFFFFF;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px #85C5D4;
+  }
+  
+  .closeBox {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 9999px;
+    cursor: pointer;
+  }
+   */
