@@ -12,11 +12,11 @@ let availableQuestions = []
 
 let questions = [
     {
-        question: 'What is 2 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
+        question: 'What are the big plant Geodomes in Cornwall called?',
+        choice1: 'Landhydrock Gardens',
+        choice2: 'The Eden Project',
+        choice3: 'The Lost Gardens of Heligan',
+        choice4: 'Trelissick Gardens',
         answer: 2,
     },
     {
@@ -43,11 +43,60 @@ let questions = [
         choice3: "15-20%",
         choice4: "30%-40%",
         answer: 1,
-    }
+    },
+    { 
+        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
+        choice1: "10-20%",
+        choice2: "5-10%",
+        choice3: "15-20%",
+        choice4: "30%-40%",
+        answer: 1,
+    },
+    { 
+        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
+        choice1: "10-20%",
+        choice2: "5-10%",
+        choice3: "15-20%",
+        choice4: "30%-40%",
+        answer: 1,
+    },
+    { 
+        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
+        choice1: "10-20%",
+        choice2: "5-10%",
+        choice3: "15-20%",
+        choice4: "30%-40%",
+        answer: 1,
+    },
+    { 
+        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
+        choice1: "10-20%",
+        choice2: "5-10%",
+        choice3: "15-20%",
+        choice4: "30%-40%",
+        answer: 1,
+    },
+    { 
+        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
+        choice1: "10-20%",
+        choice2: "5-10%",
+        choice3: "15-20%",
+        choice4: "30%-40%",
+        answer: 1,
+    },
+    { 
+        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
+        choice1: "10-20%",
+        choice2: "5-10%",
+        choice3: "15-20%",
+        choice4: "30%-40%",
+        answer: 1,
+    },
+  
 ]
 
-const SCORE_POINTS = 100
-const MAX_QUESTIONS = 4
+const SCORE_POINTS = 10
+const MAX_QUESTIONS = 10
 
 startGame = () => {
     questionCounter = 0
@@ -161,4 +210,39 @@ startGame()
     
 // }
 
+const username = document.querySelector('#username')
+const saveScoreBtn = document.querySelector('#saveScoreBtn')
+const finalScore = document.querySelector('#finalScore')
+const mostRecentScore = localStorage.getItem('mostRecentScore')
 
+const highScores = JSON.parse(localStorage.getItem('highScores')) || []
+
+const MAX_HIGH_SCORES = 5
+
+finalScore.innerText = mostRecentScore
+
+username.addEventListener('keyup', () => {
+    saveScoreBtn.disabled = !username.value
+})
+
+saveHighScore = e => {
+    e.preventDefault()
+
+    const score = {
+        score: mostRecentScore,
+        name: username.value
+    }
+
+    highScores.push(score)
+
+    highScores.sort((a,b) => {
+        return b.score - a.score
+    })
+
+    highScores.splice(5)
+
+    localStorage.setItem('highScores', JSON.stringify(highScores))
+    window.location.assign('/')
+
+    
+}
