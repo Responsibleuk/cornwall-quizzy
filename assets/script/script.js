@@ -12,7 +12,7 @@ let availableQuestions = []
 
 let questions = [
     {
-        question: 'What are the big plant Geodomes in Cornwall called?',
+        question: "What are the big plant Geodomes in Cornwall called?",
         choice1: 'Landhydrock Gardens',
         choice2: 'The Eden Project',
         choice3: 'The Lost Gardens of Heligan',
@@ -20,8 +20,7 @@ let questions = [
         answer: 2,
     },
     {
-        question:
-            "The tallest building in the world is located in which city?",
+        question: "What colour is the Cornwall flag?",
         choice1: "Dubai",
         choice2: "New York",
         choice3: "Shanghai",
@@ -29,7 +28,7 @@ let questions = [
         answer: 1,
     },
     {
-        question: "What percent of American adults believe that chocolate milk comes from brown cows?",
+        question: "The iconic Tate gallery is in which Cornish town?",
         choice1: "20%",
         choice2: "18%",
         choice3: "7%",
@@ -37,62 +36,62 @@ let questions = [
         answer: 3,
     },
     {
-        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
+        question: "Which of these ingredients does not belong in a traditional Cornish pasty?",
         choice1: "10-20%",
         choice2: "5-10%",
         choice3: "15-20%",
         choice4: "30%-40%",
         answer: 1,
     },
-    { 
-        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
+    {
+        question: "Which of these celebrities is NOT from Cornwall?",
         choice1: "10-20%",
         choice2: "5-10%",
         choice3: "15-20%",
         choice4: "30%-40%",
         answer: 1,
     },
-    { 
-        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
+    {
+        question: "The 1990s adaptation of Roald Dahl’s ‘The Witches’ was partly filmed in which Cornish hotel?",
         choice1: "10-20%",
         choice2: "5-10%",
         choice3: "15-20%",
         choice4: "30%-40%",
         answer: 1,
     },
-    { 
-        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
+    {
+        question: "Which lighthouse is closest to Land’s End?",
         choice1: "10-20%",
         choice2: "5-10%",
         choice3: "15-20%",
         choice4: "30%-40%",
         answer: 1,
     },
-    { 
-        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
+    {
+        question: "Which British celebrity chef has a restaurant in Padstow?",
         choice1: "10-20%",
         choice2: "5-10%",
         choice3: "15-20%",
         choice4: "30%-40%",
         answer: 1,
     },
-    { 
-        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
+    {
+        question: "The Minack Theatre is an open-air amphitheatre near Land’s End. What does Minack mean in Cornish?",
         choice1: "10-20%",
         choice2: "5-10%",
         choice3: "15-20%",
         choice4: "30%-40%",
         answer: 1,
     },
-    { 
-        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
+    {
+        question: "What is the name of Newquay’s best known beach, which hosts an international surfing contest?",
         choice1: "10-20%",
         choice2: "5-10%",
         choice3: "15-20%",
         choice4: "30%-40%",
         answer: 1,
     },
-  
+
 ]
 
 const SCORE_POINTS = 10
@@ -106,7 +105,7 @@ startGame = () => {
 }
 
 getNewQuestion = () => {
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
         return window.location.assign('/end.html')
@@ -114,8 +113,8 @@ getNewQuestion = () => {
 
     questionCounter++
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
-    
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`
+
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]
     question.innerText = currentQuestion.question
@@ -132,7 +131,7 @@ getNewQuestion = () => {
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        if(!acceptingAnswers) return
+        if (!acceptingAnswers) return
 
         acceptingAnswers = false
         const selectedChoice = e.target
@@ -140,7 +139,7 @@ choices.forEach(choice => {
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
-        if(classToApply === 'correct') {
+        if (classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
         }
 
@@ -155,7 +154,7 @@ choices.forEach(choice => {
 })
 
 incrementScore = num => {
-    score +=num
+    score += num
     scoreText.innerText = score
 }
 
@@ -207,7 +206,7 @@ startGame()
 //     localStorage.setItem('highScores', JSON.stringify(highScores))
 //     window.location.assign('/')
 
-    
+
 // }
 
 const username = document.querySelector('#username')
@@ -235,7 +234,7 @@ saveHighScore = e => {
 
     highScores.push(score)
 
-    highScores.sort((a,b) => {
+    highScores.sort((a, b) => {
         return b.score - a.score
     })
 
@@ -244,5 +243,5 @@ saveHighScore = e => {
     localStorage.setItem('highScores', JSON.stringify(highScores))
     window.location.assign('/')
 
-    
+
 }
