@@ -70,17 +70,19 @@
 
   </header>
 
-  <div id="wrapper">
+  <section id="wrapper">
 
-
+<!-- ================ quiz ================ -->
+<div class="title">
     <h1>Are you neurodiverse</h1>
     <p>Take this questionnaire to find out!</p>
-
-    <br>
+</div>
 
     <form id="quiz">
-      <!-- Question 1 -->
-      <h2>Do you have problems remembering appointments or obligations?</h2>
+
+<!-- ================ question1 ================ -->
+<article class="question">
+      <h3>Do you have problems remembering appointments or obligations?</h3>
       <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
       <!-- The value is which answer the choice corresponds to. -->
       <label><input type="radio" name="q2" value="c1">
@@ -98,35 +100,18 @@
       <label><input type="radio" name="q2" value="c4">
         Very Often
       </label><br />
+    </article>
 
-      <!-- Question 2 -->
-      <h2>How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done? </h2>
-      <!-- Here are the choices for the second question. Notice how each input tag has the same name (q2), but a different name than the previous question. -->
-      <label><input type="radio" name="q2" value="c1">
-        Never
-      </label><br />
-      <label><input type="radio" name="q2" value="c2">
-        Rarely
-      </label><br />
-      <label><input type="radio" name="q2" value="c3">
-        Sometimes
-      </label><br />
-      <label><input type="radio" name="q2" value="c4">
-        Often
-      </label><br />
-      <label><input type="radio" name="q2" value="c4">
-        Very Often
-      </label><br />
 
       
-
+<form>
       <button type="submit" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
       <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
     </form>
 
 
     <div id="answer">Your result will show up here!</div>
-  </div>
+  </section>
 
   <!-- footer -->
   <footer id="footer-container">

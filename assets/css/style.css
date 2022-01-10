@@ -341,21 +341,23 @@ Countdown Timer
   letter-spacing: var(--spacing);
 }
 
+/*
+=============== 
+Quiz
+===============
+*/
 
-body {
-  font-family: sans-serif;
-  background: green;
-}
-h2 {
-  margin: 5px 0;
-}
+
+
 #wrapper {
-  width: 600px;
-  margin: 0 auto;
+  width: 90vw;
+  margin: 2rem auto;
   background: white;
   padding: 10px 15px;
   border-radius: 10px;
+  box-shadow: var(--dark-shadow);
 }
+
 input {
   margin: 5px 10px;
 }
@@ -378,4 +380,22 @@ button {
   border: 1px dashed #ccc;
   background: #eee;
   padding: 10px;
+}
+
+.question {
+  width: 80vw;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--dark-shadow);
+}
+
+.title {
+  width: 80vw;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  text-align: center;
+
 }
