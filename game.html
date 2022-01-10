@@ -1,114 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Page</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="fontawesome-free-5.12.0-web/">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <title>Kind Cornwall</title>
 </head>
+
 <body>
-
-    <header>
-        <!-- navigation menu -->
-        <nav>
-          <div class="nav-center">
-            <!-- nav header -->
-            <div class="nav-header">
-              <img src="assets/images/kind-cornwall-logo.png" class="logo" alt="logo" />
-              <button class="nav-toggle">
-                <i class="fas fa-bars"></i>
-              </button>
-            </div>
-            <!-- links -->
-            <ul class="links">
-              <li>
-                <a href="index.html">home</a>
-              </li>
-              <li>
-                <a href="community.html">community</a>
-              </li>
-              <li>
-                <a href="studio.html">studio</a>
-              </li>
-              <li>
-                <a href="blog.html">blog</a>
-              </li>
-              <li>
-                <a href="quiz.html" class="active">quiz</a>
-              </li>
-            </ul>
-            <!-- social media -->
-            <ul class="social-icons">
-              <li>
-                <a href="https://www.twitter.com">
-                  <i class="fab fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.twitter.com">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.twitter.com">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.twitter.com">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-    
-      </header>
-    
-
-    <div class="container">
-        <div id="game" class="justify-center flex-column">
-            <div id="progress">
-                <div class="progress-item">
-                    <p id="progressText" class="progress-prefix">
-                        Question
-                    </p>
-                    <div id="progressBar">
-                        <div id="progressBarFull"></div>
-                    </div>
-                    <div class="hud-item">
-                      <p class="hud-prefix">
-                          Score
-                      </p>
-                      <h1 class="hud-main-text" id="score">
-                          0
-                      </h1>
-                  </div>
-                </div>
-            </div>
-            <h1 id="question">What is the answer to this question</h1>
-            <div class="choice-container">
-                <p class="choice-prefix">A</p>
-                <p class="choice-text" data-number="1">Choice</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-prefix">B</p>
-                <p class="choice-text" data-number="2">Choice 2</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-prefix">C</p>
-                <p class="choice-text" data-number="3">Choice 3</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-prefix">D</p>
-                <p class="choice-text" data-number="4">Choice 4</p>
-            </div>
+  <header>
+    <!-- navigation menu -->
+    <nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="assets/images/kind-cornwall-logo.png" class="logo" alt="logo" />
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-    </div>
+        <!-- links -->
+        <ul class="links">
+          <li>
+            <a href="index.html" class="active">home</a>
+          </li>
+          <li>
+            <a href="community.html">community</a>
+          </li>
+          <li>
+            <a href="studio.html">studio</a>
+          </li>
+          <li>
+            <a href="blog.html">blog</a>
+          </li>
+          <li>
+            <a href="quiz.html">quiz</a>
+          </li>
+        </ul>
+        <!-- social media -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  
+  </header>
+
+  <div id="wrapper">
+    <h1>What kind of computer scientist are you?</h1>
+    <p>Take this questionnaire to find out!</p>
+
+    <form id="quiz">
+      <!-- Question 1 -->
+      <h2>What gets you the most excited?</h2>
+      <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+      <!-- The value is which answer the choice corresponds to. -->
+      <label><input type="radio" name="q1" value="c1">
+        Experimenting, discovering, and learning
+      </label><br />
+      <label><input type="radio" name="q1" value="c2">
+        Helping others
+      </label><br />
+      <label><input type="radio" name="q1" value="c3">
+        Music, movies, games, and making others laugh
+      </label><br />
+      <label><input type="radio" name="q1" value="c4">
+        Taking risks
+      </label><br />
+
+      <!-- Question 2 -->
+      <h2>What is your ideal work environment?</h2>
+      <!-- Here are the choices for the second question. Notice how each input tag has the same name (q2), but a different name than the previous question. -->
+      <label><input type="radio" name="q2" value="c1">
+        Inside a high tech lab with lots of fancy equipment
+      </label><br />
+      <label><input type="radio" name="q2" value="c2">
+        Somewhere I feel appreciated for my work
+      </label><br />
+      <label><input type="radio" name="q2" value="c3">
+        Surrounded by cool gadgets and toys
+      </label><br />
+      <label><input type="radio" name="q2" value="c4">
+        Inside a cozy room or garage at home
+      </label><br />
+
+      <!-- Question 3 -->
+      <h2>Who are your role models?</h2>
+      <!-- Choices for the third question -->
+      <label><input type="radio" name="q3" value="c1">
+        People who make great discoveries
+      </label><br />
+      <label><input type="radio" name="q3" value="c2">
+        People who make sacrifices to help others
+      </label><br />
+      <label><input type="radio" name="q3" value="c3">
+        Creative, artistic, and expressive people
+      </label><br />
+      <label><input type="radio" name="q3" value="c4">
+        People who build innovative products
+      </label><br />
+
+      <!-- Question 4 -->
+      <h2>What do you do when you encounter a difficult problem?</h2>
+      <!-- Choices for the fourth question -->
+      <label><input type="radio" name="q4" value="c1">
+        Try to find the solution yourself (online, in a book, etc.)
+      </label><br />
+      <label><input type="radio" name="q4" value="c2">
+        Ask someone for help
+      </label><br />
+      <label><input type="radio" name="q4" value="c3">
+        Take a break, because it helps you be more creative
+      </label><br />
+      <label><input type="radio" name="q4" value="c4">
+        Jump in and try different solutions until one works
+      </label><br />
+
+      <button type="submit" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
+      <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+    </form>
+
+
+    <div id="answer">Your result will show up here!</div>
+  </div>
+
+  <!-- footer -->
+  <footer id="footer-container">
+    <section class="emailSignup">
+      <h2>Build a better Cornwall</h2>
+      <p>The Community for Cornish Lifestyle Businesses</p>
+    </section>
+  </footer>
+
   <script src="assets/script/script.js" type="text/javascript"></script>
-
 </body>
+
 </html>

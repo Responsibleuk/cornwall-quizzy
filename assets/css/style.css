@@ -638,3 +638,11 @@ Footer
     border-radius: 9999px;
     cursor: pointer;
   }
+
+  #wrapper {
+    width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
