@@ -1,43 +1,43 @@
-const slides = document.querySelectorAll(".slide");
-const nextBtn = document.querySelector(".nextBtn");
-const prevBtn = document.querySelector(".prevBtn");
-slides.forEach(function (slide, index) {
-  slide.style.left = `${index * 100}%`;
-});
-let counter = 0;
-nextBtn.addEventListener("click", function () {
-  counter++;
-  carousel();
-});
+// In HTML, .display-area has the width of 4 cards = 880px. Each card is 200px width and margin set to 10px.
+// .display-area has a .cards-wrapper which contains all the cards. .cards-wrapper is set to display flex.
+// .display-area has overflow hidden to hide the portion of cards-wrapper which extends beyond the container's width.
 
-prevBtn.addEventListener("click", function () {
-  counter--;
-  carousel();
-});
+const wrapper = document.querySelector('.cards-wrapper');
+// console.log(wrapper.clientWidth);
 
-function carousel() {
-  // working with slides
-  // if (counter === slides.length) {
-  //   counter = 0;
-  // }
-  // if (counter < 0) {
-  //   counter = slides.length - 1;
-  // }
-  // working with buttons
+// grab the dots
+const dots = document.querySelectorAll('.dot');
+// the default active dot num which is array[0]
+let activeDotNum = 0;
 
-  if (counter < slides.length - 1) {
-    nextBtn.style.display = "block";
-  } else {
-    nextBtn.style.display = "none";
-  }
-  if (counter > 0) {
-    prevBtn.style.display = "block";
-  } else {
-    prevBtn.style.display = "none";
-  }
-  slides.forEach(function (slide) {
-    slide.style.transform = `translateX(-${counter * 100}%)`;
+dots.forEach((dot, idx) => {  
+//   number each dot according to array index
+  dot.setAttribute('data-num', idx);
+  
+//   add a click event listener to each dot
+  dot.addEventListener('click', (e) => {
+    
+    let clickedDotNum = e.target.dataset.num;
+    // console.log(clickedDotNum);
+//     if the dot clicked is already active, then do nothing
+    if(clickedDotNum == activeDotNum) {
+      // console.log('active');
+      return;
+    }
+    else {
+      // console.log('not active');
+      // shift the wrapper
+      let displayArea = wrapper.parentElement.clientWidth;
+      // let pixels = -wrapper.clientWidth * clickedDotNum;
+      let pixels = -displayArea * clickedDotNum
+      wrapper.style.transform = 'translateX('+ pixels + 'px)';
+//       remove the active class from the active dot
+      dots[activeDotNum].classList.remove('active');
+//       add the active class to the clicked dot
+      dots[clickedDotNum].classList.add('active');
+//       now set the active dot number to the clicked dot;
+      activeDotNum = clickedDotNum;
+    }
+    
   });
-}
-
-prevBtn.style.display = "none";
+});
