@@ -665,16 +665,16 @@ padding: 10px;
   }
     
 .awareness-image {
-width: 19vw;
-margin: 2.5vw;
+width: 22vw;
+margin: .5vw;
 }
     
 
 
 .awareness-caption {
 text-align: left;
-width: 15vw;
-padding-left: 3vw;
+max-width: 20vw;
+margin: .5vw;
 }
 
 .more-info {
@@ -685,16 +685,17 @@ text-decoration: none;
   width: 75vw;
   max-width: 1170px;
   margin-left: 12vw;
+  border: #49a6e9;
+  
 }
 
 .section-more {
-  width: 75vw;
   max-width: 1170px;
 }
 
 .section-more h1 {
-  width: 75vw;
-  max-width: 1170px;
-  margin-left: 12vw;
-  margin-top: 5vw;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-top: 1vw;
 }
