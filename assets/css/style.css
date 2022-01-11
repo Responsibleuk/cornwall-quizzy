@@ -588,10 +588,10 @@ Slider
   transition: ease 0.5s;
 }
 .display-area {
-  width: 880px;
+  width: 62vw;
 /*   border: 1px solid black; */
-  overflow-x: hidden;
-  margin: auto;
+  overflow: hidden;
+  margin: 16rem;
 }
 
 .dots-wrapper {
