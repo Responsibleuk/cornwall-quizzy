@@ -694,11 +694,9 @@ margin: 2.5vw;
 
 
 .awareness-caption {
-align-self: flex-start;
-text-align: center;
-border-bottom: 2px solid #0C3C60;
-font-size: 100%;
-width: 24vw;
+text-align: left;
+width: 15vw;
+padding-left: 3vw;
 }
 
 .more-info {
