@@ -660,12 +660,12 @@ padding: 10px;
   background-color: white;
   display: flex;
   flex-flow: column;
-  max-width: 23vw;
+  max-width: 20vw;
   
   }
     
 .awareness-image {
-width: 22vw;
+width: 19vw;
 margin: .5vw;
 }
     
@@ -689,6 +689,12 @@ text-decoration: none;
   
 }
 
+ol {
+  margin-bottom: 5rem;
+  
+}
+
+
 .section-more {
   max-width: 1170px;
 }
@@ -697,5 +703,6 @@ text-decoration: none;
   text-align: left;
   text-transform: capitalize;
   font-size: 1rem;
-  margin-top: 1vw;
+  margin-top: 3vw;
+  margin-left: 5vw;
 }
