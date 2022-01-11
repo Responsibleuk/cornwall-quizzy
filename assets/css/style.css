@@ -172,7 +172,7 @@ p {
 main {
   min-height: 100vh;
   display: grid;
-  place-items: center;
+  place-items: left;
 }
 /*
 =============== 
@@ -180,7 +180,10 @@ Countdown Timer
 ===============
 */
 .gift-img {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  max-width: 35vw;
+  max-height: 80vh;
+  overflow: hidden;
 }
 .gift-info h3 {
   text-transform: uppercase;
@@ -188,6 +191,11 @@ Countdown Timer
 }
 .gift-info p {
   color: var(--clr-grey-6);
+}
+.gift-info ol {
+  color: var(--clr-grey-6);
+  margin: 1rem;
+  
 }
 .date {
   color: var(--clr-grey-5);
@@ -208,30 +216,7 @@ Countdown Timer
 .gift-info p {
   margin: 2rem 0;
 }
-.deadline {
-  display: flex;
-}
-.deadline-format {
-  background: var(--clr-grey-1);
-  color: var(--clr-white);
-  margin-right: 1rem;
-  width: 5rem;
-  height: 5rem;
-  display: grid;
-  place-items: center;
-  text-align: center;
-}
-.deadline-format span {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.85rem;
-}
-.deadline h4:not(.expired) {
-  font-size: 2rem;
-  margin-bottom: 0.25rem;
-  letter-spacing: var(--spacing);
-}
+
 
 /*
 =============== 
@@ -641,8 +626,6 @@ Recipes
 /* awareness image with text over */
 #awareness-image-container {
   background-color: white;       
-  padding-left: 25px;
-  padding-right: 70px;
   }
 
 .awareness-intro {
@@ -652,12 +635,6 @@ position: relative;
 width: 100%; 
 }
 
-.awareness-intro-h { 
-position: absolute; 
-top: 200px; 
-left: 30px; 
-width: 100%; 
-}
 
 .awareness-intro-h h2 { 
 color: white; 
@@ -675,14 +652,15 @@ padding: 10px;
 .flex-container {
   display: flex; 
   width: 100%;
-  margin: 2vw;
+  margin: 4vw;
+  
 }
 
 .awareness-figure {
   background-color: white;
   display: flex;
   flex-flow: column;
-  width: 24vw;
+  max-width: 23vw;
   
   }
     
@@ -701,4 +679,22 @@ padding-left: 3vw;
 
 .more-info {
 text-decoration: none;
+}
+
+.section-method {
+  width: 75vw;
+  max-width: 1170px;
+  margin-left: 12vw;
+}
+
+.section-more {
+  width: 75vw;
+  max-width: 1170px;
+}
+
+.section-more h1 {
+  width: 75vw;
+  max-width: 1170px;
+  margin-left: 12vw;
+  margin-top: 5vw;
 }
