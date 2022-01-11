@@ -652,7 +652,7 @@ padding: 10px;
 .flex-container {
   display: flex; 
   width: 100%;
-  margin: 4vw;
+  margin: 2vw;
   
 }
 
@@ -660,13 +660,12 @@ padding: 10px;
   background-color: white;
   display: flex;
   flex-flow: column;
-  max-width: 20vw;
-  
+  max-width: 21.5vw;
+  margin: 1vw;
   }
     
 .awareness-image {
-width: 19vw;
-margin: .5vw;
+width: 20vw;
 }
     
 
@@ -696,7 +695,7 @@ ol {
 
 
 .section-more {
-  max-width: 1170px;
+  width: 100%;
 }
 
 .section-more h1 {
