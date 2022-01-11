@@ -62,7 +62,7 @@ function tabulateAnswers() {
   }
   
   // program the reset button
-  function resetAnswer() {
-    var answerbox = document.getElementById('answer');
-    answerbox.innerHTML = "Your result will show up here!";
-  }
+  // function resetAnswer() {
+  //   var answerbox = document.getElementById('answer');
+  //   answerbox.innerHTML = "Your result will show up here!";
+  // }

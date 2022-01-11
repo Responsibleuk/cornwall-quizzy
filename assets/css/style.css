@@ -393,6 +393,8 @@ button {
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: var(--dark-shadow);
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
@@ -412,3 +414,74 @@ button {
   text-align: center;
 
 }
+
+
+
+/*
+=============== 
+Footer
+===============
+*/
+
+#footer-container {
+	background-color: var(--clr-white);
+	margin-top: 1rem;
+  box-shadow: var(--dark-shadow);
+}
+
+.emailSignup {
+	display: block;
+	background: var(--clr-white);
+	margin: 1rem 1rem 0 1rem;
+	position: relative;
+	box-sizing: border-box;
+	padding: 1rem;
+	text-align: center;
+}
+
+.emailSignup h1 {
+	font-size: 3rem;
+	margin: 1rem;
+	color: var(--clr-primary-1);
+	text-transform: uppercase;
+}
+
+.emailSignup h2 {
+	font-size: 2rem;
+	margin: 1rem;
+	color: var(--clr-primary-1);
+	text-transform: uppercase;
+}
+
+.emailSignup h3 {
+	font-size: 1.5rem;
+	margin: 1rem;
+	color: var(--clr-primary-1);
+}
+
+.emailSignup p {
+	font-size: 1rem;
+	line-height: 1.4;
+	margin: 1rem;
+	color: var(--clr-primary-10);
+}
+
+.emailSignup form {
+	text-align: center;
+	padding: 1rem;
+}
+
+.emailSignup--email-input {
+	vertical-align: middle;
+	border: 0;
+	outline: 0;
+	width: 50%;
+	height: 46px;
+	line-height: 46px;
+	padding: 5px 20px;
+	box-sizing: border-box;
+	font-size: 18px;
+	border-radius: 3px;
+}
+
+
