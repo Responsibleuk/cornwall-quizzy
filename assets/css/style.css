@@ -625,91 +625,34 @@ Recipes
 ===============
 */
 
-/* awareness image with text over */
-#awareness-image-container {
-  background-color: white;       
-  }
-
-.awareness-intro {
-
-
-position: relative; 
-width: 100%; 
-}
-
-
-.awareness-intro-h h2 { 
-color: white; 
-/* font: bold 24px/45px Helvetica, Sans-Serif;  */
-letter-spacing: 1px;  
-background: rgba(0, 0, 0, 0.7);
-padding: 10px; 
-}
-
-
-
 
 /* awareness section */
-#recipe-container
-
-
-
+#recipe-container {
+padding: 1rem;
+overflow: hidden;
+}
 
 .flex-container {
   display: flex; 
-  width: 100%;
-  
-  
+  width: 100%;  
 }
 
-.awareness-figure {
+.recipe-figure {
   background-color: white;
   display: flex;
   flex-flow: column;
-  max-width: 21.5vw;
+  max-width: 22vw;
   margin: 1vw;
   }
-    
-.awareness-image {
+ 
+.recipe-image {
 width: 20vw;
 }
-    
 
-
-.awareness-caption {
+.recipe-caption {
 text-align: left;
 max-width: 20vw;
 margin: .5vw;
-}
-
-.more-info {
-text-decoration: none;
-}
-
-.section-method {
-  width: 75vw;
-  max-width: 1170px;
-  margin-left: 12vw;
-  border: #49a6e9;
-  
-}
-
-ol {
-  margin-bottom: 5rem;
-  
-}
-
-
-.section-more {
-  width: 100%;
-}
-
-.section-more h1 {
-  text-align: left;
-  text-transform: capitalize;
-  font-size: 1rem;
-  margin-top: 3vw;
-  margin-left: 5vw;
 }
 
 /*
@@ -734,7 +677,7 @@ main {
   margin-right: auto;
 }
 .container {
-  width: 80vw;
+  width: 50vw;
   max-width: var(--fixed-width);
 }
 .review {
@@ -761,7 +704,6 @@ main {
   display: block;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
   position: relative;
 }
 .img-container::after {
@@ -775,7 +717,6 @@ main {
   height: 2.5rem;
   display: grid;
   place-items: center;
-  border-radius: 50%;
   transform: translateY(25%);
   background: var(--clr-primary-5);
   color: var(--clr-white);
