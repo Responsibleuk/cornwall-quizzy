@@ -160,12 +160,12 @@ p {
 }
 /* section */
 .section {
-  padding: 5rem 0;
+  padding: 1rem 0;
 }
 
 .section-center {
-  width: 90vw;
-  margin: 5rem auto;
+  width: 95vw;
+  margin: 1rem auto;
   max-width: 1170px;
 }
 
@@ -253,7 +253,7 @@ nav {
   }
 
   .logo {
-    height: 15vh;
+    height: 5vh;
   }
   .links a {
     color: var(--clr-grey-3);
@@ -278,9 +278,9 @@ nav {
     transition: var(--transition);
   }
   .show-links {
-    height: 10rem;
+    height: 5rem;
   }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 992px) {
     .nav-center {
       max-width: 1170px;
       margin: 0 auto;
@@ -669,16 +669,14 @@ main {
   text-align: center;
   margin-bottom: 4rem;
 }
-.underline {
-  height: 0.25rem;
-  width: 5rem;
-  background: var(--clr-primary-5);
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .container {
-  width: 50vw;
+  width: 35vw;
   max-width: var(--fixed-width);
+}
+
+h1 {
+  font-size: 2rem;
 }
 .review {
   background: var(--clr-white);
@@ -693,20 +691,20 @@ main {
 }
 .img-container {
   position: relative;
-  width: 150px;
-  height: 150px;
+  /* width: 50vw;
+  height: 50vh; */
   border-radius: 50%;
   margin: 0 auto;
   margin-bottom: 1.5rem;
 }
 #person-img {
-  width: 100%;
+  width: 30vw;
   display: block;
-  height: 100%;
+  
   object-fit: cover;
   position: relative;
 }
-.img-container::after {
+/* .img-container::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f10e";
@@ -730,7 +728,7 @@ main {
   top: -0.25rem;
   right: -0.5rem;
   border-radius: 50%;
-}
+} */
 #author {
   margin-bottom: 0.25rem;
 }
