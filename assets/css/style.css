@@ -650,11 +650,15 @@ padding: 10px;
 
 
 /* awareness section */
+#recipe-container
+
+
+
 
 .flex-container {
   display: flex; 
   width: 100%;
-  margin: 2vw;
+  
   
 }
 
@@ -826,4 +830,41 @@ main {
 .random-btn:hover {
   background: var(--clr-primary-5);
   color: var(--clr-primary-1);
+}
+
+
+/*
+=============== 
+Hero Image
+===============
+*/
+
+
+/* hero image */
+
+#hero-image {
+	height: 40rem;
+	/* width: 100%; */
+	overflow: hidden;
+	background: url(../images/hero-do-more.jpg) no-repeat center center;
+	box-shadow: var(--light-shadow);
+}
+
+#hero-image-text {
+	width: 46rem;
+	padding-top: 5rem;
+	padding-bottom: 2rem;
+	padding-left: 15rem;
+}
+
+#hero-image-text p {
+	padding-bottom: 2rem;
+}
+
+#hero-image-text-other {
+	text-align: center;
+	width: 40rem;
+	padding-top: 5rem;
+	padding-bottom: 2rem;
+	padding-left: 15rem;
 }
