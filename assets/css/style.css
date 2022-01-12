@@ -159,48 +159,31 @@ p {
   background: var(--clr-black);
 }
 /* section */
-/* .section {
+.section {
   padding: 1rem 0;
-} */
+}
 
 .section-center {
   width: 95vw;
-  margin: 1rem auto;
+  margin: 2.5rem auto;
   max-width: 1170px;
 }
 
 main {
-  min-height: 100vh;
   display: grid;
   place-items: left;
 }
+
+.home-info {
+  min-width: 60vw;
+}
+
 /*
 =============== 
-Countdown Timer
+Reactive
 ===============
 */
-.gift-img {
-  margin-bottom: 1rem;
-  max-width: 35vw;
-  max-height: 80vh;
-  overflow: hidden;
-}
-.gift-info h3 {
-  text-transform: uppercase;
-  color: var(--clr-primary-3);
-}
-.gift-info p {
-  color: var(--clr-grey-6);
-}
-.gift-info ol {
-  color: var(--clr-grey-6);
-  margin: 1rem;
-  
-}
-.date {
-  color: var(--clr-grey-5);
-  font-size: 0.85rem;
-}
+
 @media screen and (min-width: 992px) {
   .section-center {
     display: grid;
@@ -216,6 +199,7 @@ Countdown Timer
 .gift-info p {
   margin: 2rem 0;
 }
+
 
 
 /*
@@ -529,7 +513,7 @@ Recipes
 
 /* awareness section */
 #recipe-container {
-padding: 1rem;
+margin: 1rem;
 overflow: hidden;
 }
 
@@ -548,6 +532,7 @@ overflow: hidden;
  
 .recipe-image {
 width: 20vw;
+margin: 1vw;
 }
 
 .recipe-caption {
@@ -555,6 +540,42 @@ text-align: left;
 max-width: 20vw;
 margin: .5vw;
 }
+
+/*
+=============== 
+Recipes
+===============
+*/
+
+
+/* awareness section */
+#about-recipe-container {
+  padding: 1rem;
+  overflow: hidden;
+  }
+  
+  .about-flex-container {
+    display: flex; 
+    width: 100%;  
+  }
+  
+  .about-recipe-figure {
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    max-width: 10vw;
+    margin: 1vw;
+    }
+   
+  .about-recipe-image {
+  width: 10vw;
+  }
+  
+  .about-recipe-caption {
+  text-align: left;
+  max-width: 9vw;
+  margin: .5vw;
+  }
 
 /*
 =============== 
@@ -571,15 +592,8 @@ main {
   margin-bottom: 4rem;
 }
 
-.container {
-  width: 35vw;
-  max-width: var(--fixed-width);
-}
-
-h1 {
-  font-size: 2rem;
-}
 .review {
+  width: 25vw;
   background: var(--clr-white);
   padding: 1.5rem 2rem;
   border-radius: var(--radius);
@@ -587,9 +601,11 @@ h1 {
   transition: var(--transition);
   text-align: center;
 }
-.review:hover {
-  box-shadow: var(--dark-shadow);
+
+h1 {
+  font-size: 1rem;
 }
+
 .img-container {
   position: relative;
   /* width: 50vw;
@@ -599,7 +615,7 @@ h1 {
   margin-bottom: 1.5rem;
 }
 #person-img {
-  width: 30vw;
+  width: 20vw;
   display: block;
   
   object-fit: cover;
@@ -618,6 +634,9 @@ h1 {
 #info {
   margin-bottom: 0.75rem;
 }
+
+
+
 .prev-btn,
 .next-btn {
   color: var(--clr-primary-7);
