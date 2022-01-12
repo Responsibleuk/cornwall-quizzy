@@ -159,7 +159,12 @@ p {
   background: var(--clr-black);
 }
 /* section */
+
 .section {
+  padding: 1rem 0;
+}
+
+.about {
   padding: 1rem 0;
 }
 
@@ -550,31 +555,33 @@ Recipes
 
 /* awareness section */
 #about-recipe-container {
-  padding: 1rem;
   overflow: hidden;
   }
   
   .about-flex-container {
     display: flex; 
     width: 100%;  
+    margin-left: -0.5vw
   }
   
   .about-recipe-figure {
     background-color: white;
     display: flex;
     flex-flow: column;
-    max-width: 10vw;
-    margin: 1vw;
+    max-width: 11.25vw;
+    
     }
    
   .about-recipe-image {
   width: 10vw;
+  margin: .5rem;
   }
   
   .about-recipe-caption {
   text-align: left;
   max-width: 9vw;
-  margin: .5vw;
+  
+  margin-left: 2rem;
   }
 
 /*
@@ -582,15 +589,13 @@ Recipes
 Reviews
 ===============
 */
-main {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-}
+
 .title {
   text-align: center;
   margin-bottom: 4rem;
 }
+
+
 
 .review {
   width: 25vw;
@@ -620,6 +625,7 @@ h1 {
   
   object-fit: cover;
   position: relative;
+  
 }
 
 #author {
@@ -687,4 +693,94 @@ Hero Image
 	padding-top: 5rem;
 	padding-bottom: 2rem;
 	padding-left: 15rem;
+}
+
+
+/* 
+==============
+rective
+==============
+*/
+
+@media screen and (max-width: 768px) {
+	.choice-container {
+		min-width: 20rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about-recipe-figure {
+		max-width: 80vw;
+    
+
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about-recipe-image {
+		min-width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    
+
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.awareness-caption {
+		min-width: 80vw;
+    padding-left: 15vw;
+   
+
+	}
+}
+
+@media screen and (max-width: 768px) {
+  .review  {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-container {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #person-img {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.about-flex-container {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+}  
+
+.home-info {
+  margin-bottom: 2rem;
+
+}
+
+.about-recipe-figure {
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  max-width: 10vw;
+  margin-top: 2rem;
+  margin-left: 1vw;
+  }
+ 
+.about-recipe-image {
+width: 10vw;
+}
+
+.about-recipe-caption {
+text-align: left;
+max-width: 9vw;
+margin: .5vw;
+}
 }
