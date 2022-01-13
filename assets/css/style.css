@@ -186,6 +186,76 @@ main {
 
 /*
 =============== 
+Countdown Timer
+===============
+*/
+
+.home-img {
+	margin-bottom: 1rem;
+}
+
+.home-info h3 {
+	text-transform: uppercase;
+	color: var(--clr-primary-3);
+}
+
+.home-info p {
+	color: var(--clr-grey-6);
+}
+
+.date {
+	color: var(--clr-grey-5);
+	font-size: 1.1rem;
+}
+
+@media screen and (min-width: 992px) {
+	.section-center {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		place-items: center;
+		gap: 3rem;
+		width: 95vw;
+	}
+	.home-img {
+		margin-bottom: 0;
+	}
+}
+
+.home-info p {
+	margin: 2rem 0;
+}
+
+.launch {
+	display: flex;
+}
+
+.launch-format {
+	background: var(--clr-grey-1);
+	color: var(--clr-white);
+	margin-right: 1rem;
+	width: 7rem;
+	height: 7rem;
+	display: grid;
+	place-items: center;
+	text-align: center;
+}
+
+.launch-format span {
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 0.85rem;
+}
+
+.launch h4:not(.expired) {
+	font-size: 2rem;
+	margin-bottom: 0.25rem;
+	letter-spacing: var(--spacing);
+}
+
+
+/*
+=============== 
 Reactive
 ===============
 */
