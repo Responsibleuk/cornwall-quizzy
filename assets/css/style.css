@@ -609,7 +609,7 @@ margin: 1vw;
 .recipe-caption {
 text-align: left;
 max-width: 20vw;
-margin: .5vw;
+margin-left: 1rem;
 }
 
 /*
@@ -646,8 +646,7 @@ Recipes
   .about-recipe-caption {
   text-align: left;
   max-width: 9vw;
-  
-  margin-left: 2rem;
+  margin-left: 1rem;
   }
 
 /*
