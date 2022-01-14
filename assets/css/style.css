@@ -849,3 +849,74 @@ max-width: 9vw;
 margin: .5vw;
 }
 }
+
+/*
+=============== 
+Studio accordian
+===============
+*/
+
+.studio-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.accordion {
+	list-style: none;
+	max-width: 550px;
+	width: 100%;
+}
+
+.accordion-item {
+	margin-bottom: .8rem;
+	border: 1px solid #F2F2F2;
+	transition: all .2s linear;
+}
+
+.accordion-item.open {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+}
+
+.accordion-item-head {
+	padding: 1rem;
+}
+
+.accordion-item-head {
+	background: var(--clr-primary-1);
+	color: var(--clr-white);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.accordion-item-head i {
+	transition: transform .3s linear;
+}
+
+.accordion-item.open .accordion-item-head i {
+	transform: rotate(-180deg)
+}
+
+.accordion-item-body {
+	overflow: hidden;
+	height: 0;
+}
+
+.accordion-item.open .accordion-item-body {
+	padding: 1rem;
+	height: auto;
+}
+
+.accordion-item-body>*:not(:first-child) {
+	margin-top: .8rem;
+}
+
+.accordion-item-body p {
+	color: black;
+	font-size: .9rem;
+	line-height: 1.3;
+}
+
+
