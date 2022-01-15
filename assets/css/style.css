@@ -170,7 +170,9 @@ p {
 
 .section-center {
   width: 95vw;
-  margin: 2.5rem auto;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-top: 1rem;
   max-width: 1170px;
 }
 
@@ -404,7 +406,7 @@ input {
 button {
   font-size: 1rem;
   padding-bottom: 2rem;
-  margin: 2rem 0rem;
+  margin: 2rem;
   color: white;
   border: 0;
   border-radius: 1rem;
@@ -935,6 +937,7 @@ Community section
 	text-align: center;
 }
 
+
 .community-container h4{
   font-size: 2rem;
 }
@@ -1077,7 +1080,7 @@ Modal
 
 .close-btn-c {
 	text-align: center;
-	/* margin-top: 1rem; */
+	margin: 1rem;
 	font-size: 4rem;
 	background: transparent;
 	border-color: transparent;
