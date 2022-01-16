@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 
-/*
-=============== 
-Fonts
-===============
-*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
 /*
 =============== 
@@ -169,9 +163,8 @@ p {
 }
 
 .section-center {
-  width: 95vw;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  width: 90vw;
+  margin: 5rem auto;
   margin-top: 1rem;
   max-width: 1170px;
 }
@@ -220,15 +213,15 @@ Countdown Timer
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-    gap: 3rem;
-    width: 95vw;
+    gap: 1rem;
+    width: 90vw;
   }
   .gift-img {
     margin-bottom: 0;
   }
 }
 .gift-info p {
-  margin: 2rem 0;
+  margin: 1rem;
 }
 .deadline {
   display: flex;
@@ -930,11 +923,74 @@ Community section
 ==============
 */
 
+.com-info {
+  margin-bottom: 2rem;
+}
+.com-info h3 {
+  text-transform: uppercase;
+  color: var(--clr-primary-3);
+}
+.com-info p {
+  color: var(--clr-grey-6);
+}
+
+.com-img {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 3rem;
+    width: 95vw;
+  }
+  .com-img {
+    margin-bottom: 0;
+  }
+}
+
+
+/*
+=============== 
+Reactive
+===============
+*/
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 3rem;
+    width: 95vw;
+    margin-bottom: 1rem;
+  }
+  .com-img {
+    margin-bottom: 0;
+  }
+
+  .community-item {
+    box-shadow: none;
+  }
+
+  .community-item h4 {
+    font-size: .5rem;
+    margin-right: .5rem;
+    }
+  }
+.com-info p {
+  margin: 2rem 0;
+}
+
+
 .community-container {
 	
 	display: flex;
 	flex-direction: row;
 	text-align: center;
+  margin-bottom: 2rem;
 }
 
 
@@ -943,17 +999,16 @@ Community section
 }
 
 .community-item {
-	width: 10rem;
-  height: 10rem;
-  margin: 1rem;
+	width: 10vw;
+  height: 20vh;
+  margin-right: 1rem;
 	flex: 50%;
-	background-color: var(--clr-primary-10);
 	box-shadow: var(--light-shadow);
 }
 
 .community-item h4 {
   padding-top: 1rem;
-  font-size: 1rem;
+  font-size: .6rem;
 }
 
 .modal-btn {
@@ -989,26 +1044,32 @@ Modal
 }
 
 .community-modal {
-	margin-left: 20vw;
-	margin-right: 20vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
 	margin-top: 10vh;
-	max-width: 60vw;
+	max-width: 70vw;
 	box-shadow: var(--light-shadow);
   text-align: left;
 }
 .community-modal h1 {
-	font-size: 2rem;
+	font-size: 1rem;
   padding-top: 2rem;
   padding-left: 2rem;
 
 }
 
-.community-modal h2 {
-	font-size: 1.2rem;
+.community-modal-body h2 {
+	font-size: 1rem;
   text-align: left;
 }
 
-.community-modal p {
+
+.community-modal-body h2 {
+	font-size: 1rem;
+  text-align: left;
+}
+
+.community-modal-body p {
 	font-size: 1rem;
   text-align: left;
 }
