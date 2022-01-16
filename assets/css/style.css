@@ -1001,14 +1001,17 @@ Reactive
 .community-item {
 	width: 10vw;
   height: 20vh;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 	flex: 50%;
-	box-shadow: var(--light-shadow);
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+  
 }
 
 .community-item h4 {
   padding-top: 1rem;
-  font-size: .6rem;
+  text-align: center;
+  font-size: .8rem;
 }
 
 .modal-btn {
