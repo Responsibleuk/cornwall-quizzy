@@ -198,9 +198,16 @@ Countdown Timer
   margin-bottom: 2rem;
 }
 .gift-info h3 {
-  text-transform: uppercase;
   color: var(--clr-primary-3);
+  font-size: 1.5rem;
 }
+
+.gift-info h1 {
+  text-transform: uppercase;
+  color: var(--clr-primary-1);
+  font-size: 2rem;
+}
+
 .gift-info p {
   color: var(--clr-grey-6);
 }
@@ -976,6 +983,7 @@ Reactive
   }
 
   .community-item h4 {
+    width: 100%;
     font-size: .5rem;
     margin-right: .5rem;
     }
