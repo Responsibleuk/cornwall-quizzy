@@ -1185,7 +1185,7 @@ Form
 */
 
 .form-container {
-	max-width: 40rem;
+	max-width: 40vw;
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
