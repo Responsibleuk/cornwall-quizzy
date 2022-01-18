@@ -111,7 +111,7 @@ h5 {
 }
 p {
   color: var(--clr-grey-5);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
 }
 @media screen and (min-width: 800px) {
   h1 {
