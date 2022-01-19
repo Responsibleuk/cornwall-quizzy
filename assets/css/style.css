@@ -321,7 +321,7 @@ nav {
 }
 
 .logo {
-	height: 15vh;
+	height: 10vh;
 }
 
 .menu a {
@@ -1024,7 +1024,6 @@ Reactive
   height: 20vh;
   margin-right: 1.5rem;
 	flex: 50%;
-  box-shadow: var(--light-shadow);
   transition: var(--transition);
   
 }
