@@ -313,7 +313,6 @@ nav {
 
 .nav-toggle:hover {
 	color: var(--clr-primary-1);
-	transform: rotate(90deg);
 }
 
 .active {
