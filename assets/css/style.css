@@ -293,12 +293,13 @@ Nav Bar
 nav {
     background: var(--clr-white);
     box-shadow: var(--light-shadow);
+    min-height: 15vh;
   }
   .nav-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    
   }
   .nav-toggle {
     font-size: 1.5rem;
